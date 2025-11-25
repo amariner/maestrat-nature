@@ -1,0 +1,110 @@
+:root {
+    --brand--orange: #EC850B;
+    --brand--beige: #FDF0D6;
+    --brand--green: #174613;
+    /* Overwrite existing variables if needed, or use these new ones */
+    --brand--light: var(--brand--green);
+    /* Mapping green to brand light for now */
+    --background--warm: var(--brand--beige);
+}
+
+/* Fix for hidden elements due to missing JS animations */
+.fade-in-heading,
+.fade-in-description,
+.fade-in-image {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+/* Navbar fixes */
+@media screen and (min-width: 992px) {
+    .nav-menu {
+        height: auto !important;
+        padding: 0 !important;
+        background-color: transparent !important;
+        display: flex !important;
+        gap: 2rem;
+        align-items: center;
+        margin-left: 2rem;
+        /* Spacing from logo */
+    }
+
+    .w-nav-menu {
+        display: flex !important;
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        align-items: center;
+        justify-content: flex-end !important;
+        /* Align items to the right */
+        width: auto !important;
+        /* Prevent taking full width */
+        gap: 1.5rem;
+        /* Tighter gap */
+    }
+
+    /* Hide menu button on desktop to prevent layout issues */
+    .menu-button {
+        display: none !important;
+    }
+
+    /* Group to the left: Logo is first, then Nav Menu. 
+     We need to ensure the parent grid/flex allows this. 
+     The original grid was auto 1fr auto. We want auto auto 1fr? 
+     Or just flex-start.
+  */
+    .navbar-grid {
+        display: flex !important;
+        justify-content: space-between !important;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .nav-link.btn-contact {
+        background-color: #8FBC8F;
+        /* Light green placeholder, or maybe use a tint of brand green? User said 'verde claro'. DarkSeaGreen is lightish. */
+        background-color: #C1E1C1;
+        /* Pastel green? */
+        /* Let's try a lighter version of the corporate green or just a nice light green */
+        background-color: #D0E8D0;
+        /* Very light green */
+        /* Actually, let's use the Beige as background and Green text? No, user said 'verde claro de fondo' */
+        /* Let's try a tint of the corporate green */
+        background-color: color-mix(in srgb, var(--brand--green), white 60%);
+        color: var(--brand--green) !important;
+        padding: 0.5rem 1.5rem;
+        border-radius: 2rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .nav-link.btn-contact:hover {
+        background-color: var(--brand--green);
+        color: var(--brand--beige) !important;
+    }
+}
+
+/* Mobile menu fix (simple fallback) */
+@media screen and (max-width: 991px) {
+    /* Handled by Svelte component */
+}
+
+/* Fix hero background */
+.section.full-screen {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    width: 100vw !important;
+    /* Ensure full viewport width */
+    max-width: 100% !important;
+}
+
+/* Footer alignment fix */
+@media screen and (min-width: 992px) {
+    .footer-grid {
+        grid-template-columns: 1fr auto !important;
+        align-items: end;
+    }
+}

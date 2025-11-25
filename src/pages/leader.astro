@@ -1,0 +1,139 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.svelte";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Programa LEADER - Camping Maestrat Nature">
+    <Navbar client:load />
+
+    <section class="section padding-6 margin-top-6">
+        <div class="container w-container">
+            <div class="w-layout-grid grid-leader">
+                <div class="leader-content">
+                    <a href="/" class="link-home">← Volver al Inicio</a>
+                    <div class="eu-logo-wrapper">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg"
+                            alt="Bandera de la Unión Europea"
+                            class="eu-logo"
+                        />
+                        <p class="text-small">Unión Europea</p>
+                    </div>
+
+                    <h1 class="heading-leader">
+                        Programa LEADER de desarrollo rural. Proyecto
+                        cofinanciado por la Unión Europea
+                    </h1>
+
+                    <div class="rich-text w-richtext">
+                        <p>
+                            <strong
+                                >Programa LEADER de desarrollo rural. Proyecto
+                                cofinanciado por la Unión Europea</strong
+                            >
+                        </p>
+
+                        <p>
+                            El Camping Maestrat Nature ha llevado a cabo un
+                            proyecto de modernización y mejora integral de sus
+                            instalaciones, con el apoyo del programa LEADER,
+                            financiado por la Unión Europea. La actuación
+                            consiste en la creación de una lavandería para uso
+                            de clientes, la instalación de cámaras de seguridad,
+                            la incorporación de nuevas barreras de acceso, el
+                            reacondicionamiento de parcelas previamente
+                            inutilizables, la creación de zonas ajardinadas y
+                            áreas verdes, la renovación completa de las luces de
+                            emergencia y la sustitución de los diferentes
+                            elementos del sistema eléctrico necesarios para
+                            mejorar la seguridad eléctrica.
+                        </p>
+
+                        <p>
+                            El proyecto tiene como objetivo modernizar el
+                            establecimiento, mejorar la experiencia del usuario,
+                            incrementar la seguridad y fomentar un modelo
+                            turístico más sostenible y adaptado al entorno
+                            rural.
+                        </p>
+
+                        <p>
+                            Como resultado del proyecto, el camping se verá
+                            dotado de instalaciones renovadas con la
+                            recuperación y creación de zonas verdes, las nuevas
+                            parcelas adaptadas para su acampada o la lavandería
+                            con lavadoras y secadoras industriales. Los clientes
+                            también estarán provistos de una mayor seguridad
+                            como resultado de la instalación de cámaras de
+                            seguridad, barreras para el control de accesos y un
+                            sistema eléctrico mejorado y reacondicionado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</Layout>
+
+<style>
+    .grid-leader {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .eu-logo-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border: 1px solid #eee;
+        display: inline-block;
+    }
+
+    .eu-logo {
+        width: 100px;
+        height: auto;
+        margin-bottom: 0.5rem;
+    }
+
+    .heading-leader {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        line-height: 1.2;
+    }
+
+    .rich-text p {
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+    }
+
+    .text-small {
+        font-size: 0.875rem;
+        color: #666;
+        margin: 0;
+    }
+    .text-small {
+        font-size: 0.875rem;
+        color: #666;
+        margin: 0;
+    }
+
+    .link-home {
+        display: inline-block;
+        margin-bottom: 2rem;
+        color: var(--brand--green);
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .link-home:hover {
+        text-decoration: underline;
+    }
+</style>
