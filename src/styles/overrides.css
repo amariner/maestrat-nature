@@ -1,7 +1,10 @@
 :root {
-    --brand--orange: #EC850B;
-    --brand--beige: #FDF0D6;
-    --brand--green: #174613;
+    --brand--orange: #F2E75F;
+    /* Renamed to yellow conceptually, but keeping variable name if used elsewhere, or just updating value if it was orange. User said 'Amarillo: #F2E75F'. Let's replace orange with yellow. */
+    --brand--yellow: #F2E75F;
+    --brand--beige: #ECEBD7;
+    --brand--green: #2E463D;
+    --brand--light-green: #A7D64F;
     /* Overwrite existing variables if needed, or use these new ones */
     --brand--light: var(--brand--green);
     /* Mapping green to brand light for now */
@@ -62,33 +65,22 @@
         width: 100%;
     }
 
-    .nav-link.btn-contact {
-        background-color: #8FBC8F;
-        /* Light green placeholder, or maybe use a tint of brand green? User said 'verde claro'. DarkSeaGreen is lightish. */
-        background-color: #C1E1C1;
-        /* Pastel green? */
-        /* Let's try a lighter version of the corporate green or just a nice light green */
-        background-color: #D0E8D0;
-        /* Very light green */
-        /* Actually, let's use the Beige as background and Green text? No, user said 'verde claro de fondo' */
-        /* Let's try a tint of the corporate green */
-        background-color: color-mix(in srgb, var(--brand--green), white 60%);
-        color: var(--brand--green) !important;
-        padding: 0.5rem 1.5rem;
-        border-radius: 2rem;
-        font-weight: 600;
-        transition: all 0.3s ease;
-    }
+}
 
-    .nav-link.btn-contact:hover {
-        background-color: var(--brand--green);
-        color: var(--brand--beige) !important;
-    }
+/* Navbar Logo Styles */
+.navbar-logo {
+    height: 40px;
+    width: auto;
+    display: block;
 }
 
 /* Mobile menu fix (simple fallback) */
 @media screen and (max-width: 991px) {
+
     /* Handled by Svelte component */
+    .navbar-logo {
+        height: 35px;
+    }
 }
 
 /* Fix hero background */
@@ -107,4 +99,19 @@
         grid-template-columns: 1fr auto !important;
         align-items: end;
     }
+}
+
+/* Global Navbar Button Styles */
+.nav-link.btn-contact {
+    background-color: var(--brand--light-green);
+    color: var(--brand--green) !important;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-link.btn-contact:hover {
+    background-color: var(--brand--green);
+    color: var(--brand--beige) !important;
 }

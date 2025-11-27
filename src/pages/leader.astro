@@ -5,13 +5,12 @@ import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Programa LEADER - Camping Maestrat Nature">
-    <Navbar client:load />
+    <Navbar client:load isHomePage={false} />
 
     <section class="section padding-6 margin-top-6">
         <div class="container w-container">
             <div class="w-layout-grid grid-leader">
                 <div class="leader-content">
-                    <a href="/" class="link-home">← Volver al Inicio</a>
                     <div class="eu-logo-wrapper">
                         <img
                             src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg"
@@ -21,12 +20,12 @@ import Footer from "../components/Footer.astro";
                         <p class="text-small">Unión Europea</p>
                     </div>
 
-                    <h1 class="heading-leader">
+                    <h1 class="heading-leader fade-in-heading">
                         Programa LEADER de desarrollo rural. Proyecto
                         cofinanciado por la Unión Europea
                     </h1>
 
-                    <div class="rich-text w-richtext">
+                    <div class="rich-text w-richtext fade-in-description">
                         <p>
                             <strong
                                 >Programa LEADER de desarrollo rural. Proyecto
@@ -123,17 +122,5 @@ import Footer from "../components/Footer.astro";
         font-size: 0.875rem;
         color: #666;
         margin: 0;
-    }
-
-    .link-home {
-        display: inline-block;
-        margin-bottom: 2rem;
-        color: var(--brand--green);
-        text-decoration: none;
-        font-weight: 600;
-    }
-
-    .link-home:hover {
-        text-decoration: underline;
     }
 </style>

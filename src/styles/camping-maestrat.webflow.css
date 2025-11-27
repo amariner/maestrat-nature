@@ -117,7 +117,8 @@ a {
   text-decoration: underline;
 }
 
-ul, ol {
+ul,
+ol {
   margin-top: 0;
   margin-bottom: 1.5rem;
   padding-left: 2rem;
@@ -187,7 +188,7 @@ figure {
 
 .section.full-screen {
   background-color: var(--contrast--primary-black);
-  background-image: url('../images/sol.jpg');
+  background-image: url('../images/hero-sol.jpg');
   background-position: 50%;
   background-size: auto;
   width: 100%;
@@ -264,11 +265,13 @@ figure {
   color: var(--contrast--primary);
 }
 
-.action:hover, .action.color-text-primary-black {
+.action:hover,
+.action.color-text-primary-black {
   color: var(--contrast--primary-black);
 }
 
-.action.color-text-primary-black:hover, .action.color-text-primary-black.footer:hover {
+.action.color-text-primary-black:hover,
+.action.color-text-primary-black.footer:hover {
   color: var(--brand--light);
 }
 
@@ -292,9 +295,11 @@ figure {
   width: 100%;
   position: sticky;
   top: 10rem;
+  border-radius: 1rem;
 }
 
-.sticky-image._2, .sticky-image._3 {
+.sticky-image._2,
+.sticky-image._3 {
   margin-top: 1.5rem;
 }
 
@@ -318,6 +323,7 @@ figure {
   text-decoration: none;
   display: inline-block;
   position: relative;
+  border-radius: 2rem;
 }
 
 .button-wrapper.secondary {
@@ -387,6 +393,7 @@ figure {
 .cover-image {
   object-fit: cover;
   width: 100%;
+  border-radius: 1rem;
 }
 
 .cover-image.width-25 {
@@ -446,6 +453,7 @@ figure {
   text-decoration: none;
   transition: box-shadow .25s;
   display: flex;
+  border-radius: 1rem;
 }
 
 .info-card:hover {
@@ -490,6 +498,7 @@ figure {
   padding: 1.38rem 2rem 1.13rem;
   line-height: 1.5rem;
   transition: background-color .25s;
+  border-radius: 0.5rem;
 }
 
 .submit-button:hover {
@@ -512,6 +521,7 @@ figure {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 150%;
+  border-radius: 0.5rem;
 }
 
 .cta-field:focus {
@@ -592,9 +602,11 @@ figure {
   grid-auto-columns: 1fr;
   transition: background-color .25s;
   position: relative;
+  border-radius: 1rem;
 }
 
-.back-wrapper:hover, .background-primary {
+.back-wrapper:hover,
+.background-primary {
   background-color: var(--contrast--primary);
 }
 
@@ -646,7 +658,9 @@ figure {
   height: 100%;
 }
 
-.left-arrow, .right-arrow, .slide-nav {
+.left-arrow,
+.right-arrow,
+.slide-nav {
   display: none;
 }
 
@@ -665,6 +679,7 @@ figure {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  border-radius: 1rem;
 }
 
 .main-image.mobile {
@@ -719,6 +734,7 @@ figure {
 .case-cta-wrapper {
   background-color: var(--contrast--primary);
   padding: 2rem;
+  border-radius: 1rem;
 }
 
 .cta-item-wrapper {
@@ -753,6 +769,8 @@ figure {
 
 .gallery-link {
   width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .layout-center {
@@ -780,7 +798,8 @@ figure {
   text-decoration: none;
 }
 
-.navbar-logo-hide, .close-icon {
+.navbar-logo-hide,
+.close-icon {
   display: none;
 }
 
@@ -1074,7 +1093,9 @@ figure {
     padding-left: 0;
   }
 
-  .sticky-image._1, .sticky-image._2, .sticky-image._3 {
+  .sticky-image._1,
+  .sticky-image._2,
+  .sticky-image._3 {
     position: relative;
     top: 0;
   }
@@ -1103,7 +1124,8 @@ figure {
     grid-template-columns: 1fr;
   }
 
-  .marquee-wrapper, .marquee-bottom-train {
+  .marquee-wrapper,
+  .marquee-bottom-train {
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
   }
@@ -1152,7 +1174,8 @@ figure {
     grid-row-gap: 1.5rem;
   }
 
-  .gallery-list, .cta-grid {
+  .gallery-list,
+  .cta-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1364,7 +1387,8 @@ figure {
     display: none;
   }
 
-  .toc-item-block, .gap-2-horizontal-color {
+  .toc-item-block,
+  .gap-2-horizontal-color {
     flex-flow: column;
   }
 
@@ -1436,7 +1460,8 @@ figure {
   align-self: end;
 }
 
-#w-node-_950d15e0-9b73-082c-0803-4fa989e0f832-89e9dcea, #w-node-_19e6d886-f670-aa38-5f2e-b19db857e8db-89e9dcea {
+#w-node-_950d15e0-9b73-082c-0803-4fa989e0f832-89e9dcea,
+#w-node-_19e6d886-f670-aa38-5f2e-b19db857e8db-89e9dcea {
   align-self: center;
 }
 
@@ -1448,7 +1473,8 @@ figure {
   justify-self: end;
 }
 
-#w-node-_07836ec1-bb72-9fae-3a6b-019f9785e4ab-89e9dceb, #w-node-_7e33f6d7-cbb8-c90a-04c3-0a072f1d8012-89e9dcec {
+#w-node-_07836ec1-bb72-9fae-3a6b-019f9785e4ab-89e9dceb,
+#w-node-_7e33f6d7-cbb8-c90a-04c3-0a072f1d8012-89e9dcec {
   place-self: end;
 }
 
@@ -1472,7 +1498,10 @@ figure {
   align-self: end;
 }
 
-#w-node-_567585e8-c8f8-70e1-01c5-6e5dad805e98-89e9dcee, #w-node-cb7f7ddd-921d-dfd9-ece2-9bf39421c7e0-89e9dcee, #w-node-_38826c12-400d-daf7-a3f4-3953fd33c37c-89e9dcee, #w-node-fcd40409-984e-2886-053d-44e066355ad5-89e9dcee {
+#w-node-_567585e8-c8f8-70e1-01c5-6e5dad805e98-89e9dcee,
+#w-node-cb7f7ddd-921d-dfd9-ece2-9bf39421c7e0-89e9dcee,
+#w-node-_38826c12-400d-daf7-a3f4-3953fd33c37c-89e9dcee,
+#w-node-fcd40409-984e-2886-053d-44e066355ad5-89e9dcee {
   align-self: center;
 }
 
@@ -1541,9 +1570,12 @@ figure {
 }
 
 @media screen and (max-width: 991px) {
-  #w-node-_8151178a-e163-96ae-293c-e7b4b1712736-89e9dcea, #w-node-_58bb9099-9ea9-54ef-7437-b52334132d29-89e9dcea, #w-node-_19e6d886-f670-aa38-5f2e-b19db857e8da-89e9dcea, #w-node-_16c43506-db99-161f-fef1-8a567fc1b298-7fc1b28a, #w-node-c932e985-f3c5-fb3d-28c4-56ff2bdde855-89e9dcee {
+
+  #w-node-_8151178a-e163-96ae-293c-e7b4b1712736-89e9dcea,
+  #w-node-_58bb9099-9ea9-54ef-7437-b52334132d29-89e9dcea,
+  #w-node-_19e6d886-f670-aa38-5f2e-b19db857e8da-89e9dcea,
+  #w-node-_16c43506-db99-161f-fef1-8a567fc1b298-7fc1b28a,
+  #w-node-c932e985-f3c5-fb3d-28c4-56ff2bdde855-89e9dcee {
     order: -9999;
   }
 }
-
-

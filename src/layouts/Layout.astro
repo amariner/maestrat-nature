@@ -3,6 +3,7 @@ import "../styles/normalize.css";
 import "../styles/webflow.css";
 import "../styles/camping-maestrat.webflow.css";
 import "../styles/overrides.css";
+import "../styles/animations.css";
 
 interface Props {
     title: string;
@@ -30,7 +31,7 @@ const { title } = Astro.props;
             property="og:description"
         />
         <meta
-            content="https://campingmaestrat.com/images/sol.jpg"
+            content="https://campingmaestrat.com/images/hero-sol.jpg"
             property="og:image"
         />
         <meta content="Camping Maestrat Nature" property="twitter:title" />
@@ -39,7 +40,7 @@ const { title } = Astro.props;
             property="twitter:description"
         />
         <meta
-            content="https://campingmaestrat.com/images/sol.jpg"
+            content="https://campingmaestrat.com/images/hero-sol.jpg"
             property="twitter:image"
         />
         <meta property="og:type" content="website" />
@@ -65,6 +66,7 @@ const { title } = Astro.props;
                 },
             });
         </script>
+        <script src="/js/animations.js" defer></script>
     </head>
     <body>
         <slot />

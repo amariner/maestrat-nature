@@ -1,28 +1,28 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.svelte";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Privacy Policy - Camping Maestrat Nature">
   <div class="page-wrapper">
     <div class="main-wrapper">
-      <div class="background-primary">
-        <Navbar />
-      </div>
+      <Navbar isHomePage={false} client:load />
+      <div class="background-primary"></div>
       <section class="section">
         <div class="w-layout-blockcontainer container w-container">
           <div class="margin-top-5">
             <div class="padding-6">
               <div class="layout-center">
-                <h1>Privacy Policy</h1>
+                <h1 class="fade-in-heading">Privacy Policy</h1>
                 <div class="margin-top-4">
-                  <div class="post-body w-richtext">
+                  <div class="post-body w-richtext fade-in-description">
                     <p>Last updated 12.12.2024</p>
                     <p>
                       When you visit, use, or navigate our Services, we may
                       process personal information depending on how you interact
-                      with [Company Name] and the Services, the choices you
-                      make, and the products and features you use.
+                      with Camping Maestrat Nature and the Services, the choices
+                      you make, and the products and features you use.
                     </p>
                     <h3>1. Information we collect</h3>
                     <p>
@@ -52,9 +52,9 @@ import Navbar from "../components/Navbar.svelte";
                       consectetur adipiscing elit.
                     </p>
                     <ul role="list">
-                      <li>[Personal Info Collected]</li>
-                      <li>[Personal Info Collected]</li>
-                      <li>[Personal Info Collected]</li>
+                      <li>Name and Contact Data</li>
+                      <li>Demographic Data</li>
+                      <li>Payment Data</li>
                     </ul>
                     <h4>Information automatically collected</h4>
                     <p>
@@ -187,33 +187,7 @@ import Navbar from "../components/Navbar.svelte";
           </div>
         </div>
       </section>
-      <div class="background-primary">
-        <section class="section">
-          <div class="w-layout-blockcontainer container w-container">
-            <div class="padding-1-25">
-              <div class="w-layout-grid footer-grid">
-                <div class="left-column">
-                  <div class="w-layout-hflex gap-2-horizontal tablet-vertical">
-                    <a href="#" class="footer-link w-inline-block">
-                      <div class="paragraph-secondary footer-hover">
-                        Maestrat Nature S. L
-                      </div>
-                    </a>
-                    <a
-                      href="mailto:info@campingmaestrat.com"
-                      class="footer-link w-inline-block"
-                    >
-                      <div class="paragraph-secondary footer-hover">
-                        info@campingmaestrat.com
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+      <Footer />
     </div>
   </div>
 </Layout>
